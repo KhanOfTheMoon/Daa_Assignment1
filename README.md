@@ -68,9 +68,11 @@ This project implements classic divide-and-conquer algorithms, instruments them 
 * **Edge cases**: empty/singleton arrays, duplicates, presorted/reverse-sorted inputs.
 
 ## Summary
+<img width="1168" height="450" alt="daa1" src="https://github.com/user-attachments/assets/e2590bf9-c000-4b3e-8d62-f73e678668d6" />
 
 * **Randomized pivot** in QuickSort introduces **variance** in time, swaps, and depth across runs; average behavior is fast (`Θ(n log n)`), but the **worst case is `O(n²)`**.
 * **MergeSort** is stable and efficient with **linear merge**, **reusable buffer**, and **small-n insertion sort**.
 * **Deterministic Select** (group-of-5, median-of-medians) reliably achieves **linear time** with shallow recursion.
 * **Closest Pair** matches `Θ(n log n)` asymptotically but is typically the **slowest** in wall-clock due to larger constants in the combine phase.
 * Overall, **theory and measurements align**: sorters scale near `n log n`, Select is linear, and constant-factor effects (cache, branching, memory traffic, GC) explain small deviations—especially on tiny inputs.
+
